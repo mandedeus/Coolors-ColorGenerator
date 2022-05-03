@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+    background-image: radial-gradient(
+        circle farthest-corner at -25% -50%,
+        #000000 36%,
+        rgba(13, 17, 23, 0) 48%
+    ),
+    radial-gradient(
+        circle farthest-corner at -25% 150%,
+        #000000 45%,
+        rgba(13, 17, 23, 0) 89%
+    ),
+    radial-gradient(
+        circle farthest-corner at -25% -100%,
+        rgba(13, 17, 23, 0) 55%,
+        rgba(13, 17, 23, 0.28) 65%,
+        rgba(13, 17, 23, 0) 68%
+    ),
+    radial-gradient(
+        circle farthest-corner at -33% -75%,
+        #1f00cc 48%,
+        rgba(131, 5, 49, 0) 56%
+    ),
+    radial-gradient(
+        circle farthest-side at 0 -50%,
+        rgba(13, 17, 23, 0) 64%,
+        rgba(1, 2, 36, 0.4) 69%,
+        rgba(13, 17, 23, 0) 81%
+    ),
+    radial-gradient(
+        circle farthest-corner at 0 -50%,
+        rgba(13, 17, 23, 0) 33%,
+        #010c5f 51%,
+        rgba(13, 17, 23, 0) 72%
+    );
+}
+button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+header{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-section{
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+
+}
+.panel{
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(17px) saturate(143%);
+    -webkit-backdrop-filter: blur(17px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    overflow: hidden;
+}
+.color{
+    min-height: 30vh;
+    width: 20rem;
+}
+.color *{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.tool-section{
+    position: absolute;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+}
+.tool-panel{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vh;
+    padding: 0.4rem 0rem;
+    backdrop-filter: blur(17px) saturate(143%);
+    -webkit-backdrop-filter: blur(17px) saturate(143%);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
